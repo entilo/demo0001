@@ -9,13 +9,9 @@ WORKDIR $WORK_HOME
 #拷贝说明文件
 COPY readme.txt $WORK_HOME/readme.txt
 
-ls
-
 #拷贝并解压tomcat、jdk
 ADD apache-tomcat-9.0.8-deployer.tar.gz $WORK_HOME
 ADD jdk-8u321-linux-x64.tar.gz $WORK_HOME
-
-ls
 
 #设置java环境变量
 ENV JAVA_HOME $WORK_HOME/jdk1.8.0_191
