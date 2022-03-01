@@ -3,6 +3,8 @@ MAINTAINER entilo
 
 ENV WORK_HOME /usr/local
 
+java -version
+
 #设置进入容器后的主目录
 WORKDIR $WORK_HOME
 
