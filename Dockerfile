@@ -7,7 +7,7 @@ ENV WORK_HOME /usr/local
 WORKDIR $WORK_HOME
 
 #拷贝说明文件
-COPY readme.txt $WORK_HOME/readme.txt
+COPY Read.ME $WORK_HOME/Read.ME
 
 #拷贝并解压tomcat、jdk
 ADD apache-tomcat-9.0.8-deployer.tar.gz $WORK_HOME
